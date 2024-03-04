@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testy</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+     <script type="text/javascript">
+        function bookclick(){
+            document.getElementById("table").style.display = "block";
+
+            document.getElementById("lblname").innerHTML = document.getElementById("name").value;
+            document.getElementById("lbldate").innerHTML = document.getElementById("date").value;
+            document.getElementById("lbltime").innerHTML = document.getElementById("time").value;
+            document.getElementById("lblphone").innerHTML = document.getElementById("phone").value;
+            document.getElementById("lblperson").innerHTML = document.getElementById("person").value;
+        }
+        function confirmClick(){
+            document.getElementById("lblTitle").innerHTML = "check details";
+        }
+    </script>
+    <style>
+         header{
+            display: flex;
+            justify-content:space-between;
+            background-color: rgb(49, 36, 36);
+            color: gray;
+            padding: 5px;
+            position: sticky;
+            top: 0px;  
+        }
+        *{
+            font-family: arial;
+        }
+        .title{
+            font-size: 30px;
+            color:white;
+        }
+        .title1{
+            font-size: 25px;
+            margin-left: 20px;
+            background-color: black;
+            color: grey;
+            padding: 16px;
+        }
+        .phone{
+            border-top: none;
+            border-bottom: none;
+            padding: 10px;
+            font-size: 35px;
+            border-left: 1px solid gray;
+        }
+        .phone1{
+            padding: 10px;
+            font-size: 35px;
+            background-color: green;
+            border-right: none;
+        }
+        .phone:hover,.phone1:hover{
+            background-color:black;
+            color: white;
+        }
+        .food{
+            background-image: url("../public/images/food.jpg");
+            background-size: cover;
+            height: 650px;
+            display: block;
+        }
+        .food1{
+            background-image: url("../public/images/food1.jpg");
+            background-size: cover;
+            height: 650px;
+            display: block;
+        }
+        .food2{
+            background-image: url("../public/images/food2.jpg");
+            background-size: cover;
+            height: 650px;
+            display: block;
+        }
+        .shade{
+        background-color: rgba(0,0,0,0.7);
+        height: 650px;
+        width: 100%;
+       }
+        .border{
+            border: 20px solid white;
+            width: 80px;
+            font-size: 20px; 
+        }
+        .head{
+            margin-top: 29px;
+        }
+        .book{
+            font-size: 50px;
+            margin-top: 130px;
+        }
+        .book2{
+            font-size: 50px;
+            color: white;
+            margin-left: 400px;
+            margin-top: -30px;
+        }
+        .butt{
+            border: 1px solid white;
+            width: 180px;
+            color: white;
+        margin-left: 600px;
+        }
+        .butt:hover{
+            background-color: white;
+            color: black;
+        }
+        .conn{
+            background-color: orange;
+            color: black;
+            width: 150px;
+            padding: 10px;
+            margin-top: 50px; 
+        }
+        .person{
+            background-color: yellow;
+            width: 150px;
+            color: black;
+            margin-top: 50px;
+        }
+        .success{
+            height: 150px;
+        }
+        .cook{
+            margin-left: 200px;
+        }
+        .our{
+            margin-left: 800px;
+            font-size: 20px;
+            padding: 45px;
+        }
+        .condition{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .for{
+            background-color: rgb(175, 166, 151 , 0.1);
+            height:2150px;
+        }
+        .ul{
+            margin-left: 300px;
+        }
+        .src{
+            width: 70px;
+            height: 70px;
+            border-radius: 30px;
+            background-size: cover;
+        }
+        .dolor{
+            margin-left: 80px;
+        }
+        .dolor1{
+            margin-left: 200px;
+        }
+        .dolor11{
+            margin-left: 230px;
+        }
+        .dolor12{
+            margin-left: 270px;
+        }
+        .dolo{
+            margin-left: 300px;
+        }
+        .dolo1{
+            margin-left: 370px;
+        }
+        .dolo11{
+            margin-left: 320px;
+        }
+        .beef{
+            margin-left: 90px;
+            font-size: 20px;
+        }
+        .meat{
+            margin-top: 20px;
+            border: 1px solid white;
+            width: 630px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            margin-top: 30px;
+        }
+        .meat:hover{
+            background-color: orange;
+            color: black;
+        }
+        .navs{
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            padding: 40px;
+        }
+        .justify{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .make{
+            border: 1px solid black;
+           margin-left: 300px;
+           margin-right: 300px;
+            padding: 20px;
+            margin-top: 20px;
+           
+        }
+        .make:hover{
+            background-color:orange;
+            color: black;
+        }
+        .main{
+            background-image: url("../public/images/food.jpg");
+            height: 650px;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .special{
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            padding: 250px;
+            color: white;
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.7);
+            width: 100%;
+        }
+        .beef11{
+            border: 1ps solid white;
+            background-color: white;
+            color: black;
+            width: 300px;
+            padding: 30px;
+            height: 310px;
+        }
+        .beef1{
+            border: 1ps solid white;
+            background-color: white;
+            color: black;
+            width: 300px;
+            padding: 30px;
+            height: 310px;
+        }
+        .lanch{
+            margin-top: -140px;
+            margin-left: 130px;
+        }
+        .lanch1{
+            margin-left: 130px;
+        }
+        .content{
+            text-align: center;
+            margin-top: 150px;
+        }
+        .card{
+           margin-top: 100px;
+            width: 340px;
+            position: relative;
+            box-shadow: 5px 5px 5px black;
+        }
+        .per{
+            position: absolute;
+            border-radius: 50px;
+            margin-top: -100px;
+          margin-left: 70px;
+        }
+        .green{
+            margin-left: 50px;
+        }
+        .star{
+            margin-left: 70px;
+        }
+        .lab{
+            background-color: rgba(161, 158, 158 , 0.3);
+            height: 700px;
+            margin-top: 50px;
+        }
+        .doat{
+            font-size: 100px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .doat span:hover {
+            color: orange;
+        }
+        .blog{
+            text-align: center;
+           padding: 50px;
+        }
+        .msg{
+            border: 1px solid white;
+            background-color: white;
+            color: black;
+            width: 300px;
+        }
+        .even:hover{
+            color:orange;
+        }
+        .bag{
+            margin-left: 130px;
+        }
+        .insta{
+            margin-top: 150px;
+            font-size: 30px;       
+        }
+        .lang{
+            background-color: black;
+            height: 500px;
+            color: white;
+            padding: 60px;
+        }
+        .sub{
+            margin-left: 100px;
+        }
+       .made{
+        margin-top: -70px;
+       }
+       .shade{
+        background-color: rgba(0,0,0,0.7);
+        height: 650px;
+        width: 100%;
+       }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        <div class="title">colorlib.
+        <span class="title1">+testy</span></div>
+        </div>
+        <div>
+            <span class="phone"><span class="bi bi-tv"></span></span>
+            <span class="phone"><span class="bi bi-phone"></span></span>
+            <span class="phone"><span class="bi bi-phone-fill"></span></span>
+            <span class="phone1"><span class="bi bi-cart4"></span></span>
+            <span class="phone"><span class="bi bi-x-lg"></span></span>
+        </div>
+    </header>
+    <section>
+         <div class="carousel carousel-fade" data-bs-theme="dark" id="banner" data-bs-ride="carousel">
+             <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="food">
+                         <div class="shade">
+                                <div class="head p-2 d-flex justify-content-around text-white mt-0">
+                                    <div>
+                                        <div class="border p-2">testy</div>
+                                    </div>
+                                    <div class="mt-2 p-1 fs-5">
+                                        <span class="ms">home</span>
+                                        <span class="ms-3">menu</span>
+                                        <span class="ms-3">Specialties</span>
+                                        <span class="ms-3">Reservation</span>
+                                        <span class="ms-3">blog</span>
+                                        <span class="ms-3">About</span>
+                                        <span class="ms-3">Contact</span>
+                                    </div>
+                                </div>
+                                <div class="book">
+                                    <span class="fst-italic d-flex justify-content-center align-content-center text-white">BOOK TABLE FOR YOUR SELF AT A</span>
+                                    <div><span class="book2">TIME CONVINET OF YOU</span></div>
+                                </div>
+                                <div class=" butt mt-5 p-3">BOOK A TABLE</div>                              
+                        </div>
+                    </div>          
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                 <div class="food1">
+                    <div class="shade">
+                    <div class="head p-2 d-flex justify-content-around text-white mt-0">
+                        <div>
+                            <div class="border p-2">testy</div>
+                        </div>
+                        <div class="mt-2 p-1 fs-5">
+                            <span class="ms">home</span>
+                            <span class="ms-3">menu</span>
+                            <span class="ms-3">Specialties</span>
+                            <span class="ms-3">Reservation</span>
+                            <span class="ms-3">blog</span>
+                            <span class="ms-3">About</span>
+                            <span class="ms-3">Contact</span>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <span class="fst-italic d-flex justify-content-center align-content-center text-white">BOOK TABLE FOR YOUR SELF AT A</span>
+                        <div><span class="book2">TIME CONVINET OF YOU</span></div>
+                    </div>
+                    <div class=" butt mt-5 p-3">BOOK A TABLE</div>
+                    </div>
+                 </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="food2">
+                        <div class="shade">
+                        <div class="head p-2 d-flex justify-content-around text-white mt-0">
+                            <div>
+                                <div class="border p-2">testy</div>
+                            </div>
+                            <div class="mt-2 p-1 fs-5">
+                                <span class="ms">home</span>
+                                <span class="ms-3">menu</span>
+                                <span class="ms-3">Specialties</span>
+                                <span class="ms-3">Reservation</span>
+                                <span class="ms-3">blog</span>
+                                <span class="ms-3">About</span>
+                                <span class="ms-3">Contact</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <span class="fst-italic d-flex justify-content-center align-content-center  text-white">Testy & delicious Food</span>
+                            <div><span class="book2">TIME CONVINET OF YOU</span></div>
+                        </div>
+                        <div class=" butt mt-5 p-3">BOOK A TABLE</div>
+                </div>
+                </div>       
+               </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+                <div class="success bg-warning">
+                    <div class="d-flex justify-content-evenly">
+                        <input id="name" class="form-control conn" type="name" placeholder="Name">
+                        <input id="date" class="form-control conn" type="date" placeholder="date">                     
+                        <input id="time" class="form-control conn" type="time" placeholder="time">
+                        <input id="phone" type="phone" placeholder="phone" class="form-control conn">
+                        <select id="person" class="person">
+                            <option>person</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div>
+                            <button id="men" onclick="bookclick()" class="btn btn-danger mt-5" data-bs-toggle="modal" data-bs-target="#book">book a table</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="book">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 id="lblTitle" class="fst-italic text-success">successfully</h2>
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="bg-dark text-white p-2 name" id="table" style="display: none;"> 
+                                    <h2>table detailes</h2>
+                                    <dl>
+                                        <dt class="col-2">name</dt>
+                                        <dd class="col-10" id="lblname"></dd>
+                                        <dt class="col-1">date</dt>
+                                        <dd class="col-10" id="lbldate"></dd>
+                                        <dt class="col-2">time</dt>
+                                        <dd class="col-10" id="lbltime"></dd>
+                                        <dt class="col-2">phone</dt>
+                                        <dd class="col-10" id="lblphone"></dd>
+                                        <dt class="col-2">person</dt>
+                                        <dd class="col-10" id="lblperson"></dd>
+                                    </dl>
+                                    <button data-bs-target="#book" data-bs-toggle="modal" class="bi bi-pen-fill btn btn-danger w-50" onclick="confirmClick()">confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <main>
+                <div class="cook">
+                    <img src="../public/images/cook.jpg" height="520px" width="550px" align="left">
+                </div>
+                <div class="our">
+                    <div class="mt-2 text-secondary">ABOUT TASTY</div>
+                    <div class="fw-bold fs-3">Our chef cooks the most<br>delicious food for you</div>
+                        <div class="mt-5 text-secondary">Far far away, behind the word mountains, far from the<br> countries Vokalia and Consonantia, there live the blind<br> texts. Separated they live in Bookmarksgrove right at the <br>coast of the Semantics, a large language ocean.
+                        </div>
+                            <div class="mt-4 text-secondary">A small river named Duden flows by their place and<br> supplies it with the necessary regelialia. It is <br> parts of sentences fly into your mouth.</div>
+                            </div>
+                </div> 
+                </main>      
+                <div class="condition">
+                    <div class="text-secondary mt-2">OUR MENU</div>
+                    <div class="fw-bold fs-2">Discover Our Exclusive Menu</div>
+                </div>  
+                
+            <div class="for">
+                <div class="container-fluid">
+                    <div class="navs">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="#main" data-bs-toggle="tab" class="nav-link active">main</a></li>
+                            <li class="nav-item"><a href="#dessert"  data-bs-toggle="tab" class="nav-link" >dessert</a></li>
+                            <li class="nav-item"><a href="#drinks"  data-bs-toggle="tab" class="nav-link" >drinks</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="main">
+                            <div class="d-flex justify-content-around">
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-3.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Grilled Beef with potatoes<span class="dolor1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Fruit Vanilla Ice Cream<span class="dolor11 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-5.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Asian Hoisin Pork<span class="dolor12 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dess-6jpg" align="left"> 
+                                    <div class="fw-bold beef">Spicy Fried Rice & Bacon<span class="dolor1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-7.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef"> Mango Chili a Chutney<span class="dolor11 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-10.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dess-6jpg"align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-11.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-5.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="dessert">
+                            <div class="d-flex justify-content-evenly">
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-1.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Grilled Beef with potatoes<span class="dolor1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-2.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Fruit Vanilla Ice Cream<span class="dolor11 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-3.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Asian Hoisin Pork<span class="dolor12 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Spicy Fried Rice & Bacon<span class="dolor1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-5.jpg (1).webp" align="left"> 
+                                    <div class="fw-bold beef">Grilled Beef potatoes<span class="dolor11 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-3.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dess-6jpg"align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-11.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dish-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/dessert-3.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Savory Watercress Chinese Pancakes<span class="dolor fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="drinks">
+                            <div class="d-flex justify-content-evenly">
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-1.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Lemon Juice<span class="dolo fs-3">$29</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-2.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Guava Juice<span class="dolo fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-3.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef"> sprit<span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">cola<span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-5.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">whine<span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-6.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">beer<span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-7.jpg.webp"align="left"> 
+                                    <div class="fw-bold beef">mango <span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-4.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">apple <span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-1.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">Strawberry<span class="dolo11 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                                <div class="meat">
+                                    <img class="src" src="../public/images/drink-6.jpg.webp" align="left"> 
+                                    <div class="fw-bold beef">orange <span class="dolo1 fs-3">$20</span></div>
+                                    <div class="text-secondary beef">Meat, Potatoes, Rice, Tomatoe</div>
+                                </div>
+                            </div> 
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                        <div class="justify">
+                          <div class="text-secondary">Even the all-powerful Pointing has no control about the blind texts it is an almost</div>
+                            <div class="make">make a Reservation</div>
+                         </div>
+                                    
+                     <div class="main mt-5"> 
+                         <div class="shade">
+                            <div class="special">Our Specialties</div>
+                          </div>
+                     </div>
+                     <div class="d-flex lanch">
+                     <div>
+                     <div class="beef11">
+                        <div class="fw-bold fs-4 ms-5">Beef Steak</div>
+                         <div class="text-secondary mt-3"> Far far away, behind the <br>word mountains, far from <br>the countries Vokalia and<br> Consonantia, there live the<br> blind texts</div>   
+                          <div class="text-warning ms-5 fs-5 mt-3">FROM $10.00</div>
+                     </div>
+                     </div>
+                     <div>
+                        <div>
+                            <img src="../public/images/dish-5.jpg.webp" width="300px" height="310px">
+                        </div>
+                     </div>
+                     <div>
+                        <div class="beef1">
+                           <div class="fw-bold fs-4 ms-5">Chopsuey</div>
+                            <div class="text-secondary mt-3"> Far far away, behind the <br>word mountains, far from <br>the countries Vokalia and<br> Consonantia, there live the<br> blind texts</div>   
+                             <div class="text-warning ms-5 fs-5 mt-3">FROM $10.00</div>
+                        </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../public/images/dish-4.jpg.webp" width="300px" height="310px">
+                            </div>
+                         </div>
+                         </div>
+                         <div class="d-flex lanch1">
+                            <div>
+                                <div>
+                                    <img src="../public/images/dish-3.jpg.webp" width="300px" height="310px">
+                                </div>
+                             </div>
+                            <div>
+                            <div class="beef11">
+                               <div class="fw-bold fs-4 ms-5">Beef Steak</div>
+                                <div class="text-secondary mt-3"> Far far away, behind the <br>word mountains, far from <br>the countries Vokalia and<br> Consonantia, there live the<br> blind texts</div>   
+                                 <div class="text-warning ms-5 fs-5 mt-3">FROM $10.00</div>
+                            </div>
+                            </div>
+                               <div>
+                                   <div>
+                                       <img src="../public/images/dess-6jpg" width="300px" height="310px">
+                                   </div>
+                                </div>
+                                <div>
+                                    <div class="beef1">
+                                       <div class="fw-bold fs-4 ms-5">Chopsuey</div>
+                                        <div class="text-secondary mt-3"> Far far away, behind the <br>word mountains, far from <br>the countries Vokalia and<br> Consonantia, there live the<br> blind texts</div>   
+                                         <div class="text-warning ms-5 fs-5 mt-3">FROM $10.00</div>
+                                    </div>
+                                </div>
+          </div>                
+                                    <div class="content">
+                                        <div class="text-secondary">GUESTS SAYS</div>
+                                          <div class="fw-bold fs-1 mt-2">Our Satisfied Guests says</div>
+                                    </div>   
+                                            <div>
+                                            <div class="carousel carousel-fade" id="person">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item1">
+                                                        <div class="d-flex justify-content-evenly ms-5 me-5">
+                                                        <div>
+                                                        <div class="card p-5">
+                                                            <img class="per" src="../public/images/person_1.jpg.webp" width="100px">
+                                                            <div class="text-warning mt-4 star">
+                                                                <span class="bi bi-star-fill"></span>
+                                                                <span class="bi bi-star-fill"></span>
+                                                                <span class="bi bi-star-fill"></span>
+                                                                <span class="bi bi-star-fill"></span>
+                                                                <span class="bi bi-star-fill"></span>
+                                                            </div>
+                                                            <div class="mt-4 ms-3">Far far away, behind the word 
+                                                                <div class="ms-4 mt-2">far from the countries</div>
+                                                                <div class="mt-2"> Vokalia and Consonantia, there</div>
+                                                                <div class="ms-4 mt-2">live the blind texts.</div>
+                                                            <div class="fw-bold green mt-5">Dennis green</div></div>
+                                                            <div class="text-secondary green mt-1">guetest foem lotary</div>
+                                                         </div>
+                                                         </div>
+
+                                                         <div>
+                                                            <div class="card p-5">
+                                                                <img class="per" src="../public/images/person_2.jpg.webp" width="100px">
+                                                                <div class="text-warning mt-4 star">
+                                                                    <span class="bi bi-star-fill"></span>
+                                                                    <span class="bi bi-star-fill"></span>
+                                                                    <span class="bi bi-star-fill"></span>
+                                                                    <span class="bi bi-star-fill"></span>
+                                                                    <span class="bi bi-star-fill"></span>
+                                                                </div>
+                                                                <div class="mt-4 ms-3">Far far away, behind the word 
+                                                                    <div class="ms-4 mt-2">far from the countries</div>
+                                                                    <div class="mt-2"> Vokalia and Consonantia, there</div>
+                                                                    <div class="ms-4 mt-2">live the blind texts.</div>
+                                                                <div class="fw-bold green mt-5">Dennis green</div></div>
+                                                                <div class="text-secondary green mt-1">guetest foem lotary</div>
+                                                             </div>
+                                                             </div>
+
+                                                             <div>
+                                                                <div class="card p-5">
+                                                                    <img class="per" src="../public/images/person_3.jpg.webp" width="100px">
+                                                                    <div class="text-warning mt-4 star">
+                                                                        <span class="bi bi-star-fill"></span>
+                                                                        <span class="bi bi-star-fill"></span>
+                                                                        <span class="bi bi-star-fill"></span>
+                                                                        <span class="bi bi-star-fill"></span>
+                                                                        <span class="bi bi-star-fill"></span>
+                                                                    </div>
+                                                                    <div class="mt-4 ms-3">Far far away, behind the word 
+                                                                        <div class="ms-4 mt-2">far from the countries</div>
+                                                                        <div class="mt-2"> Vokalia and Consonantia, there</div>
+                                                                        <div class="ms-4 mt-2">live the blind texts.</div>
+                                                                    <div class="fw-bold green mt-5">Dennis green</div></div>
+                                                                    <div class="text-secondary green mt-1">guetest foem lotary</div>
+                                                                 </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                           </div>
+                                           <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#person">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#person">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button> 
+                                        <div class="doat1">
+                                            <div class="doat"><span class="text-warning">.</span><span>.</span><span>.</span></div>
+                                        </div>
+                                        <div class="lab">
+                                            <div class="blog">
+                                                <div class="text-secondary">BLOG</div>
+                                                <div class="fw-bold fs-1"> Recent Blog</div>
+                                            </div>
+                                            <div class="d-flex justify-content-evenly ms-5 me-5">
+                                                <div>
+                                                    <img src="../public/images/image_5.jpg.webp" width="300px">
+                                                    <div class="fw-bold msg p-3">
+                                                        <div class="text-secondary mt-4">june 05, 2018 admin</div>
+                                                        <div class="even">
+                                                        <div class="mt-3">Even the all powerfull pointing</div>
+                                                        <div class="mt-1">has no control about the build</div>
+                                                        <div class="mt-1">texts</div>
+                                                        </div>
+                                                        <div class="text-secondary mt-3">reed more<span class="bag"><span class="bi bi-bag">3</span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="../public/images/image_6.jpg.webp" width="300px" height="220px">
+                                                    <div class="fw-bold msg p-3">
+                                                        <div class="text-secondary mt-4">june 05, 2018 admin</div>
+                                                        <div class="even">
+                                                        <div class="mt-3">Even the all powerfull pointing</div>
+                                                        <div class="mt-1">has no control about the build</div>
+                                                        <div class="mt-1">texts</div>
+                                                        </div>
+                                                        <div class="text-secondary mt-3">reed more<span class="bag"><span class="bi bi-bag">3</span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="../public/images/image_7.jpg.webp" width="300px" height="220px">
+                                                    <div class="fw-bold msg p-3">
+                                                        <div class="text-secondary mt-4">june 05, 2018 admin</div>
+                                                        <div class="even">
+                                                        <div class="mt-3">Even the all powerfull pointing</div>
+                                                        <div class="mt-1">has no control about the build</div>
+                                                        <div class="mt-1">texts</div>
+                                                        </div>
+                                                        <div class="text-secondary mt-3">reed more<span class="bag"><span class="bi bi-bag">3</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doat1">
+                                                <div class="doat"><span class="text-warning">.</span><span>.</span><span>.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button class=" insta">instagram</button>
+                                        </div>
+                                <div class="footer">
+                                    <div class="mt-5 d-flex">
+                                        <img class="insta" src="../public/images/insta-1.jpg.webp" width="290px" height="280px">
+                                        <img class="insta" src="../public/images/insta-2.jpg.webp" width="290px" height="280px">
+                                        <img class="insta" src="../public/images/insta-3.jpg.webp" width="290px" height="280px">
+                                        <img class="insta" src="../public/images/insta-4.jpg.webp" width="300px" height="280px">
+                                        <img class="insta" src="../public/images/insta-5.jpg.webp" width="300px" height="280px">
+                                    </div>
+                                    
+                                        <div class="d-flex justify-content-around lang">
+                                     
+                                            <div>
+                                               <div class="fs-3">Tasty</div>
+                                                <div class="text-secondary mt-4">Far far away, behind the word mountains,<br> far from the countries Vokalia and<br> Consonantia, there live<br> the blind texts.</div>
+                                                <div class="mt-4 fs-1">
+                                                    <span class="bi bi-twitter"></span>
+                                                    <span class="bi bi-facebook"></span>
+                                                    <span class="bi bi-instagram"></span>
+                                                </div>
+                                            </div>
+                                           
+                                            <div>
+                                                <div class="fs-3">opening hovers</div>
+                                                    <div class="mt-4 monday">
+                                                        <span class="text-secondary">Monday:</span>08: - 22:00<br>
+                                                        <span class="text-secondary">Tuesday:</span>08: - 22:00<br>
+                                                        <span class="text-secondary">wednsrday:</span>08: - 22:00<br>
+                                                        <span class="text-secondary">Tuesday:</span>08: - 22:00<br>
+                                                        <span class="text-secondary">Friday:</span> 08: - 22:00<br>
+                                                        <span class="text-secondary">saterday:</span>  08: - 22:00<br>
+                                                        <span class="text-secondary">sunday:</span> 08: - 22:00</div>
+                                                    </div>
+                                          
+                                           
+                                           <div>
+                                            <div class="text-secondary">
+                                                <div class="text-white fs-3">content information</div>
+                                                <div class="mt-4">198 West 21th Street, Suite 721<br> New York NY 10016</div>
+                                                <div class="mt-3">+ 1235 2355 98</div> 
+                                                <div class="mt-3">info@yoursite.com</div>
+                                                <div class="mt-3">email@email.com</div>                                      
+                                            </div>
+                                           </div> 
+                                     
+                                           <div>
+                                                <div class="fs-3">Newsletter</div>
+                                                <div class="text-secondary mt-3">Far far away, behind the word <br>mountains, far from the countries.</div>
+                                                <div class="border w-100 text-secondary mt-5 p-2">subscribe<span class="sub"><span class="bi bi-messenger"></span></span></div>
+                                           </div>
+                                        </div>
+                                           <div class="d-flex justify-content-center made text-danger">
+                                            <div>Copyright ©2023 All rights reserved | This template is made with     <span class="bi bi-heart"></span>     by Colorlib</div>
+                                           </div>
+                                     </div>
+                                   
+                                                      
+                <script src="../node_modules/jquery/dist/jquery.js"></script>
+                <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
